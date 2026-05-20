@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- ROUND INFO -->
+
+    <div class="game-info">
+      <p>Round: <span id="round">1</span></p>
+      <p>Streak: <span id="streak">0</span></p>
+    </div>
+
+    <!-- CHOICES -->
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </div>
+
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </div>
+
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" />
+      </div>
+    </div>
+
+    <!-- COMPUTER MOVE -->
+
+    <div class="computer-choice">
+      <h2>Computer Chose:</h2>
+      <p id="comp-move">❔</p>
+    </div>
+
+    <!-- SCORE BOARD -->
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <!-- MESSAGE -->
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+      <button id="reset-btn">Reset Game</button>
+    </div>
+
+    <!-- HISTORY -->
+
+    <div class="history">
+      <h2>Game History</h2>
+      <ul id="history-list"></ul>
+    </div>
+<!-- VIDEO BACKGROUND -->
+
+<div class="animated-bg">
+  <div class="gradient-sphere sphere1"></div>
+  <div class="gradient-sphere sphere2"></div>
+  <div class="gradient-sphere sphere3"></div>
+
+  <div class="grid"></div>
+
+  <div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
